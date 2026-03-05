@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Container */
+.menu-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Responsive Heading */
+h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 30px;
+}
+
+/* Menu Layout */
+.menu {
+    display: grid;
+    gap: 25px;
+}
+
+/* Menu Item */
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive Image */
+.menu-item img {
+    width: clamp(80px, 15vw, 150px);
+    height: clamp(80px, 15vw, 150px);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Dish Name */
+dt {
+    font-size: clamp(1.1rem, 2.5vw, 1.8rem);
+    font-weight: bold;
+}
+
+/* Description */
+dd {
+    margin: 5px 0 0 0;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    color: #555;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}

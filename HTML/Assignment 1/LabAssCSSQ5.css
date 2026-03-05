@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.intro {
+    letter-spacing: 1px;
+}
+
+.formats {
+    font-weight: 500;
+}
+
+u {
+    text-decoration: underline;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ins {
+    text-decoration: underline;
+}

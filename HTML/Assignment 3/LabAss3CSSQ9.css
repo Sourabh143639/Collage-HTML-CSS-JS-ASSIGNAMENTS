@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+/* Section Styling */
+.testimonial-section{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial-section h2{
+    margin-bottom: 40px;
+}
+
+/* Flex Container */
+.testimonial-container{
+    display: flex;
+    flex-wrap: wrap;      /* Important property */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cards - 3 per row on desktop */
+.card{
+    flex: 1 1 calc(33.33% - 20px);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    background-color: rgb(139, 224, 129);
+}
+
+.card p{
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.card h4{
+    color: #555;
+}
+
+/* 📱 Mobile View */
+@media (max-width: 768px){
+    .card{
+        flex: 1 1 100%;   /* Single card per row */
+    }
+}

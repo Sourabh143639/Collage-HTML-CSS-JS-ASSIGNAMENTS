@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "featured featured featured"
+        "main main sidebar";
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Featured Story */
+.featured {
+    grid-area: featured;
+    background: #222;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Main Content */
+.main {
+    grid-area: main;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.side-card {
+    background: #ddd;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* Tablet View */
+@media (max-width: 900px) {
+    .container {
+        grid-template-areas:
+            "featured"
+            "main"
+            "sidebar";
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .featured {
+        padding: 20px;
+    }
+}
